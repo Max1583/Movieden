@@ -1,0 +1,9 @@
+.movie__search__results {
+  background-color: #100F17;
+}
+
+.movie__search__results .movie__poster {
+  width: 100%;
+  height: 240px;
+}
+/*# sourceMappingURL=movieSearchResults.css.map */

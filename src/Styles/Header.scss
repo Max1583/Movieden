@@ -1,0 +1,43 @@
+@import './var';
+
+header{
+    background-color: $base-dark;
+    border-bottom:3px solid $base-light;
+    
+    .logo{
+        span{
+            font-size:3rem;
+            font-weight: 80
+            0 !important;
+            color: #fff;
+
+      &:first-child{
+            color: $base-gold;
+            margin-right: 0px;
+            font-weight: 600;
+        }
+    }
+
+    }
+    .sub-nav{
+        max-width: 800px;
+        margin: 0px auto;
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+            opacity: 0;
+        }
+        .nav-link{
+            font-size: .9rem;
+            font-weight: 500 !important;
+            color: #6c757d;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: all .5s;
+
+            &:hover{
+                color: $base-gold;
+            }
+        }
+    }
+
+}

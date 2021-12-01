@@ -1,0 +1,28 @@
+.slider_item{
+    min-height: 400px;
+    width: 95%;
+//    border-radius: 1rem;
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+
+
+
+   @media screen and (max-width: 768px) {
+       width: 100%;
+       
+   }
+}
+
+.slick-next {
+    left: auto !important;
+    right: 10px !important;
+}
+.slick-prev {
+    left: auto !important;
+    right: 50px !important;
+}
+
+.slick-track {
+    margin:auto;
+}

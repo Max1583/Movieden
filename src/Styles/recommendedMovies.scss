@@ -1,0 +1,52 @@
+@import './var';
+
+.recommended__movies__container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+   
+
+    .recommended__movies{
+        border-radius: 20px;
+        min-width: 300px;
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition:all .5s ;
+        overflow: hidden;
+        &:hover{
+            transform: scale(1.05)
+        }
+
+        div{
+            align-self: flex-end;
+color: #fff;
+font-family: $base-font;
+
+.original_title_link{
+text-decoration: none !important;
+
+            .original_title{
+                font-size: 18px;
+                font-weight: 600;
+                color: #fff;
+                
+                &::before{
+                    content: "| ";
+                    color:$base-gold;
+                    margin-top: -5px !important;
+                }
+
+                &:hover{
+                    color: $base-gold;
+                }
+            }}
+            .release_date{
+                font-size: 14px;
+            }
+        }
+    }
+ 
+}

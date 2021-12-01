@@ -1,0 +1,41 @@
+header {
+  background-color: #100F17;
+  border-bottom: 3px solid #222028;
+}
+
+header .logo span {
+  font-size: 3rem;
+  font-weight: 80 0 !important;
+  color: #fff;
+}
+
+header .logo span:first-child {
+  color: #E4D804;
+  margin-right: 0px;
+  font-weight: 600;
+}
+
+header .sub-nav {
+  max-width: 800px;
+  margin: 0px auto;
+  overflow-x: scroll;
+}
+
+header .sub-nav::-webkit-scrollbar {
+  opacity: 0;
+}
+
+header .sub-nav .nav-link {
+  font-size: .9rem;
+  font-weight: 500 !important;
+  color: #6c757d;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .sub-nav .nav-link:hover {
+  color: #E4D804;
+}
+/*# sourceMappingURL=Header.css.map */

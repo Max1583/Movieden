@@ -1,0 +1,19 @@
+@import './var';
+
+.page-link {
+    position: relative;
+    display: block;
+    color:$base-dark !important;
+    text-decoration: none;
+    background-color: $base-gold !important;
+    border: none !important;
+    margin: 5px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+font-size: 20px !important;
+font-weight: 500;
+    &:hover{
+    background-color: $base-purple !important;
+        color:#fff !important;
+    }
+   
+}

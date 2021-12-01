@@ -1,0 +1,40 @@
+@import './var';
+.tvDetails{
+
+.season_poster{
+    width: fit-content;
+    background-color:rgba(255, 255, 255, 0.082);
+    img{
+height: 15rem;
+    }
+    h5{
+        color: $base-gold;
+        &:hover{
+            color: whitesmoke;
+        }
+    }
+    a{
+        text-decoration: none;
+        
+
+    }
+}
+
+
+
+    // @mixin replace-text($image, $x: 50%, $y: 50%) {
+    //     text-indent: -99999em;
+    //     overflow: hidden;
+    //     text-align: left;
+      
+    //     background: {
+    //       image: $image;
+    //       repeat: no-repeat;
+    //       position: $x $y;
+    //     }
+    //   }
+      
+    //   .mail-icon {
+    //     @include replace-text(url("/images/mail.svg"), 0);
+    //   }
+}

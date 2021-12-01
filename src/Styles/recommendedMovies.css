@@ -1,0 +1,57 @@
+.recommended__movies__container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.recommended__movies__container .recommended__movies {
+  border-radius: 20px;
+  min-width: 300px;
+  height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+.recommended__movies__container .recommended__movies:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.recommended__movies__container .recommended__movies div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.recommended__movies__container .recommended__movies div .original_title_link {
+  text-decoration: none !important;
+}
+
+.recommended__movies__container .recommended__movies div .original_title_link .original_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.recommended__movies__container .recommended__movies div .original_title_link .original_title::before {
+  content: "| ";
+  color: #E4D804;
+  margin-top: -5px !important;
+}
+
+.recommended__movies__container .recommended__movies div .original_title_link .original_title:hover {
+  color: #E4D804;
+}
+
+.recommended__movies__container .recommended__movies div .release_date {
+  font-size: 14px;
+}
+/*# sourceMappingURL=recommendedMovies.css.map */

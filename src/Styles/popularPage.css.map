@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,oBAAoB,CAAA;EAChB,KAAK,EAAC,IAAI;CAaZ;;AAdF,AAKQ,oBALY,CAEpB,cAAc,CAEV,WAAW,CACP,EAAE,CAAA;EACE,MAAM,EAAE,UAAU;EAClB,SAAS,EAAE,IAAI;EACf,WAAW,ECVX,QAAQ,EAAE,UAAU;CDWvB;;AATT,AAWI,oBAXgB,CAEpB,cAAc,CASV,aAAa,CAAA;EACT,MAAM,EAAE,eAAe,CAAC,aAAa;CACxC",
+    "sources": [
+        "popularPage.scss",
+        "_var.scss"
+    ],
+    "names": [],
+    "file": "popularPage.css"
+}

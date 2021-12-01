@@ -1,0 +1,38 @@
+@import './var';
+.container {
+    .badge{
+        background-color: $base-gold;
+        color: $base-dark;
+    }
+}
+.popular_movies_page{
+    color:#fff;
+.popular_movie{
+    .movie_poster_container{
+        overflow:hidden !important;
+
+    }
+&:hover{
+    .movie_poster{
+        transform: scale(1.07);
+    }
+}
+    .movie_link{
+        h5{
+            margin: 15px  10px;
+            font-size: 25px;
+            font-family: $base-font;  
+            text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden; 
+        }   
+    }
+    .movie_poster{
+        filter: brightness(0.8) contrast(1.2);
+        transition:all .6s;
+    }
+}
+
+
+}
+    

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,YAAY,CAAA;EACR,SAAS,EAAE,KAAK;CAanB;;AAdD,AAGI,YAHQ,CAGR,MAAM,CAAA;EACF,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,MAAM;EACjB,gBAAgB,ECJZ,OAAO;EDKX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAKf;;AAbL,AAUQ,YAVI,CAGR,MAAM,AAOD,MAAM,CAAA;EACH,UAAU,EAAE,mBAAmB,CAAC,GAAG,CAAC,IAAI,CAAC,IAAI,CAAE,KAAI;CACtD",
+    "sources": [
+        "searchMovies.scss",
+        "_var.scss"
+    ],
+    "names": [],
+    "file": "searchMovies.css"
+}

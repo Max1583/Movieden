@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,KAAK;EACd,KAAK,ECHG,OAAO,CDGE,UAAU;EAC3B,eAAe,EAAE,IAAI;EACrB,gBAAgB,ECFR,OAAO,CDEc,UAAU;EACvC,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;EACX,UAAU,EAAE,kHAAkH;EAClI,SAAS,EAAE,eAAe;EAC1B,WAAW,EAAE,GAAG;CAMf;;AAhBD,AAWI,UAXM,AAWL,MAAM,CAAA;EACP,gBAAgB,ECPN,OAAO,CDOc,UAAU;EACrC,KAAK,EAAC,eAAe;CACxB",
+    "sources": [
+        "pagination.scss",
+        "_var.scss"
+    ],
+    "names": [],
+    "file": "pagination.css"
+}

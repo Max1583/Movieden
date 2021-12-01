@@ -1,0 +1,15 @@
+.popular_movies_page {
+  color: #fff;
+}
+
+.popular_movies_page .popular_movie .movie_link h5 {
+  margin: 15px  10px;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.popular_movies_page .popular_movie .movie_poster {
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
+}
+/*# sourceMappingURL=popularPage.css.map */

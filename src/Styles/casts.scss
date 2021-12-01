@@ -1,0 +1,36 @@
+@import './var';
+.casts__container{
+display: flex;
+overflow-x: scroll;
+    .casts{
+        font-family: $base-font;
+        width: 180px;
+        height:fit-content;
+margin: 10px 20px !important;
+
+&:hover{
+    .casts_img{
+        transform: scale(1.05)
+    }
+}
+
+        .casts_img{
+            width: 150px;
+            height: 150px;
+            border: 5px solid rgba(255, 255, 255, 0.158);
+transition: all .5s;
+
+        }
+        .cast__name,.cast__character{
+            color: white;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.781);
+            
+            
+        }
+        .cast__character{
+            font-size: 14px;
+            color:rgba(255, 255, 255, 0.466);
+        }
+    }
+}

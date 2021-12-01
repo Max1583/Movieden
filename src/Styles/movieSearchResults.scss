@@ -1,0 +1,16 @@
+@import './var';
+
+.movie__search__results{
+background-color: $base-dark;
+    .search__result__item{
+        // background-color: $base-light;
+    //    height: 390px;
+    // margin: 1px;
+
+    }
+
+    .movie__poster{
+        width: 100%;
+        height: 240px;
+    }
+}

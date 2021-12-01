@@ -1,0 +1,82 @@
+.similar__movies__container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.similar__movies__container::-webkit-scrollbar {
+  width: 1px;
+  height: 5px !important;
+  border-radius: 30px !important;
+  background: #222028 !important;
+}
+
+.similar__movies__container::-webkit-scrollbar-thumb {
+  background: #E4D804 !important;
+  border-radius: 10px;
+  width: 5px !important;
+}
+
+.similar__movies__container .similar__movies {
+  color: #fff !important;
+  min-width: 230px !important;
+  height: 350px !important;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.507);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 5px 20px;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+.similar__movies__container .similar__movies:nth-child(1) {
+  margin-left: 0px !important;
+}
+
+.similar__movies__container .similar__movies h5 {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.similar__movies__container .similar__movies:hover {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+.similar__movies__container .similar__movies .release_date {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.similar__movies__container .similar__movies .original_title_link {
+  text-decoration: none !important;
+}
+
+.similar__movies__container .similar__movies .original_title {
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.similar__movies__container .similar__movies .original_title::before {
+  content: "| ";
+  color: #E4D804;
+  margin-top: -5px !important;
+}
+
+.similar__movies__container .similar__movies .original_title:hover {
+  color: #E4D804;
+}
+/*# sourceMappingURL=similarMovies.css.map */

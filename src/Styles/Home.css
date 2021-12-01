@@ -1,0 +1,13 @@
+.homepage {
+  height: 100% !important;
+}
+
+.homepage h1 {
+  font-size: 270%;
+}
+
+.homepage *:focus {
+  outline: none !important;
+  border: none !important;
+}
+/*# sourceMappingURL=Home.css.map */

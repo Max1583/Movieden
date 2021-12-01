@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,uBAAuB,CAAA;EACvB,gBAAgB,ECDJ,OAAO;CDalB;;AAbD,AASI,uBATmB,CASnB,cAAc,CAAA;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "movieSearchResults.scss",
+        "_var.scss"
+    ],
+    "names": [],
+    "file": "movieSearchResults.css"
+}

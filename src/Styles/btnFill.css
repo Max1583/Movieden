@@ -1,0 +1,35 @@
+.btn_fill {
+  background-color: #fff;
+  color: #222028 !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-decoration: none !important;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.btn_fill .fa-arrow-right {
+  display: none;
+}
+
+.btn_fill:hover {
+  -webkit-box-shadow: inset 0 -3.25em 0 0 #E4D804;
+          box-shadow: inset 0 -3.25em 0 0 #E4D804;
+}
+
+.btn_fill:hover .fa-arrow-right {
+  display: block;
+}
+/*# sourceMappingURL=btnFill.css.map */

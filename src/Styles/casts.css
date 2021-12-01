@@ -1,0 +1,40 @@
+.casts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.casts__container .casts {
+  font-family: "Roboto", sans-serif;
+  width: 180px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px 20px !important;
+}
+
+.casts__container .casts:hover .casts_img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.casts__container .casts .casts_img {
+  width: 120px;
+  height: 120px;
+  border: 5px solid rgba(255, 255, 255, 0.158);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.casts__container .casts .cast__name, .casts__container .casts .cast__character {
+  color: white;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.casts__container .casts .cast__character {
+  font-size: 14px;
+  color: #E4D804;
+}
+/*# sourceMappingURL=casts.css.map */
