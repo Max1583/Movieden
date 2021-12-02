@@ -22,8 +22,8 @@ overflow: hidden;
    }
 
    .slider__item__inner{
-        // background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
-        background:rgba(0, 0, 0, 0.823);
+        background-color: $base-dark-7;
+            backdrop-filter: blur(15px) brightness(75%) saturate(70%);
     position:absolute;
     top: 10px;
     bottom: 0px;
@@ -37,6 +37,12 @@ overflow: hidden;
     transition:all .6s;
 
     h4{
+        color: $base-gold;
+
+        &:hover{
+            color: #fff;
+        }
+        
 &::before{
     content: " |";
     color: $base-gold;

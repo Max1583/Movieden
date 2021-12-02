@@ -68,7 +68,7 @@ function Hero({ trending }) {
     ]
   };
   return (
-    <div className="container">
+    <div className="container mb-5">
       <Slider {...settings} className=" ">
         {
           trending.map(trend => (
@@ -79,9 +79,10 @@ function Hero({ trending }) {
 <div>
 <Link to={`MovieDetails/${trend.id}`}>
 <h4>{trend.title}</h4>
+</Link>
 <p>{trend.overview}</p>
 <p><b>{trend.release_date}</b></p>
-</Link>
+
 </div>
   </div>
 

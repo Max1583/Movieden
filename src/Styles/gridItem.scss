@@ -1,0 +1,34 @@
+@import './var';
+
+.grid__item{
+    height: 200px;
+
+a {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    place-items: center;
+    place-content: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    transition:all .6s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+ div {
+    border-radius: .3rem;
+    position: relative;
+    overflow: hidden;
+}
+}
