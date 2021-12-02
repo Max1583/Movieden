@@ -18,10 +18,11 @@ setSearchValue(e.target.value);
         {
 isSearchOverlay ?
         
-        <div className="search__overlay">
+        <div className="search__overlay container-fluid">
 
-            <form>
+            <form className="" >
                 <input type="text" placeholder="Eg - John Wick" onInput={handleSearch} />
+                <br/>
                 <Link to={`/search/${searchValue}`} className="search-button" onClick={()=>setIsSearchOverlay(false)} >SEARCH  <FiSearch /></Link>
 
                 < RiCloseLine className="searchOverlay__close" onClick={()=>setIsSearchOverlay(false)} />

@@ -1,28 +1,65 @@
-.slider_item{
-    min-height: 400px;
-    width: 95%;
+@import './var';
+
+.slider__item__container{
+position: relative;
+overflow: hidden;
+    .slider__item{
+    height: 80vh;
+    width: 97%;
 //    border-radius: 1rem;
-    background-size: cover;
+    background-size: 100% 100%;
    background-repeat: no-repeat;
-   background-position: center center;
-
-
+   background-position: center center ;
 
    @media screen and (max-width: 768px) {
        width: 100%;
        
    }
+   &:hover {
+    .slider__item__inner{
+        left: 5px;
+    }
+   }
+
+   .slider__item__inner{
+        // background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+        background:rgba(0, 0, 0, 0.823);
+    position:absolute;
+    top: 10px;
+    bottom: 0px;
+    left: -100%;
+    width: 100%;
+    right: 20px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    padding: 10px 20px;
+    transition:all .6s;
+
+    h4{
+&::before{
+    content: " |";
+    color: $base-gold;
+    margin-right: 5px;
+}
+    }
+}
 }
 
-.slick-next {
-    left: auto !important;
-    right: 10px !important;
-}
-.slick-prev {
-    left: auto !important;
-    right: 50px !important;
+
 }
 
-.slick-track {
-    margin:auto;
-}
+
+
+// .slick-next {
+//     left: auto !important;
+//     right: 10px !important;
+// }
+// .slick-prev {
+//     left: auto !important;
+//     right: 50px !important;
+// }
+
+// .slick-track {
+//     margin:auto;
+// }
