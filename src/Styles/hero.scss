@@ -36,6 +36,12 @@ overflow: hidden;
     padding: 10px 20px;
     transition:all .6s;
 
+a{
+    text-decoration:none;
+}
+p{
+    color: rgba(255, 255, 255, 0.842);
+}
     h4{
         color: $base-gold;
 

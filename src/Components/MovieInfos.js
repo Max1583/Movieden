@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { FiDisc,FiDollarSign } from 'react-icons/fi';
 import { FaRegCalendarAlt,FaHourglassEnd,FaFunnelDollar,FaStar } from 'react-icons/fa';
+import DownloadLinks from './DownloadLinks';
 
 function MovieInfos({movieDetails,genre,ytKey}) {
   // console.log(movieDetails);
@@ -44,27 +45,20 @@ function MovieInfos({movieDetails,genre,ytKey}) {
 
 </div>
 
-<div className="col-12 mt-3 text-white">
-<span>
- 
-  < FaStar />
-  < FaStar />
-  < FaStar />
-  < FaStar />
-  < FaStar />
-</span>
- {Math.round(movieDetails.vote_average/2) } (IMDB)
-</div>
+{/* <div className="col-12 mt-3 text-white">
+
+{Math.round(movieDetails.vote_average/2) } < FaStar /> -  (IMDB)
+</div> */}
 <div className="col-12 mt-3">
   
-      <h4  className="overview_header text-white px-3 py-1 mt-3" >Description</h4>
+      {/* <h4  className="overview_header text-white px-3 py-1 mt-3" >Description</h4> */}
   
-<span className=" movie__overview" > {movieDetails.overview}</span> 
+<span className=" movie__overview mt-3" > {movieDetails.overview}</span> 
 </div>
 {/* CONTENT */}
 
 
-
+<DownloadLinks title={movieDetails.title}/>
 </section>
 
 

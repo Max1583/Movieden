@@ -1,0 +1,27 @@
+@import './var';
+
+.download__links  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    .download__link{
+        background-color: #c2f02e;
+    color: #100f17;
+    text-decoration: none;
+    font-size: 1.125rem;
+    margin: 20px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px rgba(195,240,46,.38823529411764707);
+    position: relative;
+    z-index: 100!important;
+    transition: all .7s;
+    &:hover{
+        background-color: #ffffff;
+    box-shadow: 1px 1px 4px 2px rgba(255, 255, 255, 0.388);
+
+    }
+    }
+    
+}

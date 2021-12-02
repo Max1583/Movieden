@@ -2,6 +2,7 @@
 
 .slider{
     .backdrop_slider{
+        transition:all .8s;
     overflow-x: scroll;
     padding: 10px;
     &::-webkit-scrollbar {
@@ -23,4 +24,14 @@
          }
         
     }
+    
 }
+.toggle__screenshots{
+        color: $base-gold ;
+        cursor: pointer;
+            border-bottom: 1px solid;
+            font-weight: 600;
+            width:fit-content;
+            margin: auto;
+        
+    }

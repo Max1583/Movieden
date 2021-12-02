@@ -1,12 +1,25 @@
-import React,{useEffect,useState} from 'react'
+import React,{useState} from 'react'
 import '../Styles/Sliders.scss'
 import requests from '../Helpers/requests';
+import { FiCamera } from 'react-icons/fi';
 
 function BackDropSlider({movieBackdrops}) {
+    const [showBackdrop,setShowBackdrop] =useState(false)
     return (
+        <>
+
+<p className="text-center mt-3 toggle__screenshots" onClick={()=>setShowBackdrop(!showBackdrop)}>
+{
+    showBackdrop ? "Hide Screenshots " : "Show Screenshots "
+} <FiCamera/>
+</p>
+
+        {
+            showBackdrop ? 
+       
       <div className="slider">
       
-      <h3  className="mt-5 text-white title__border">MOVIE BACKDROPS</h3>
+      {/* <h3  className="mt-5 text-white title__border">MOVIE BACKDROPS</h3> */}
       <div className="backdrop_slider container d-flex" >
         
           {
@@ -24,6 +37,9 @@ function BackDropSlider({movieBackdrops}) {
     
       </div>
       </div>
+      : ""
+ }
+      </>
     )
 }
 

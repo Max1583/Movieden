@@ -72,6 +72,8 @@ return (
 <MovieInfos movieDetails={movieDetails} genre={genre} ytKey={ytKey} linkId={linkId} movieBackdrops={movieBackdrops} />
 <div className="container" >
 
+  
+
 {
    <BackDropSlider movieBackdrops={movieBackdrops}/>
 }

@@ -19,7 +19,7 @@ function Casts({linkId}) {
         {
             Casts.length?
         <>
-             <h4 className="mt-5  text-white title__border" >TOP CASTS</h4>
+             <h4 className="mt-5  text-white title__border" > CASTS</h4>
             <div className=" casts__container container mx-auto mb-4 dark__scrollbar " >
               
            {
