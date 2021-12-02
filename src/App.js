@@ -9,26 +9,25 @@ import MovieDetails from './Components/MovieDetails'
 import Popular from './Pages/Popular'
 import TvDetails from './Components/TvDetails'
 import NotFound from './Pages/NotFound'
+import Search from './Pages/Search'
 
  function App() {
     return (
-        <>
+        <div className="light__mode">
         <Header />
-       
+
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/trending" element={<Trending />} />
         <Route path="/popular/:type/page/:popularPageId" element={<Popular />} />
-        {/* <Route path="/popularMovies/page/:popularPageId" element={<Popular />} /> */}
         <Route path="/trending-TvSeries" element={<TvSeries />} />
         <Route path="/in-Theaters" element={<InTheaters />} />
         <Route  path={`/MovieDetails/:linkId`} element={<MovieDetails />} />
         <Route  path={`/TvSeries/:tvId`} element={<TvDetails />} />
+        <Route  path={`/Search/:searchValue`} element={<Search />} />
         <Route path="*" element={<NotFound />} />
-        {/* <Route  path="/MovieDetails" element={<MovieDetails />} /> */}
         </Routes>
-        {/* onUpdate={() => window.scrollTo(0, 0)} */}
-        </>
+        </div>
     )
 }
 export default App

@@ -12,7 +12,7 @@ function PagePreloader({fullWidth}) {
         <div className={` page__preloader ${fullWidth} `} >
               <Loader
         type="BallTriangle"
-        color="#E4D804"
+        color="#c2f02e"
         height={70}
         width={70}
         timeout={0} //3 secs

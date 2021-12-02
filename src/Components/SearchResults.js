@@ -15,6 +15,7 @@ function SearchResults({movieSearchResults}) {
       {/* <h2 className="container mt-4" >SEARCH RESULTS</h2> */}
         <section className="container-fluid  movie__search__results my-5 ">
             <div className="container ">
+            <h4  className="text-white">Found <span className="badge" >{movieSearchResults.filter(item=>item.media_type!=="person").length}</span> results </h4>
 
               <div className="row">
                
