@@ -1,0 +1,60 @@
+@import './var';
+
+.networkStatusBar {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: all .5s ease;
+    background-color: $base-dark-7;
+    backdrop-filter: blur(15px) brightness(75%) saturate(70%);
+    z-index: 99999999999999999999999999;
+    display: grid;
+    place-content: center;
+
+    div {
+        // width: 400px;
+        // height: 100px;
+        border-radius: 1rem;
+        // background-color: #ffffff;
+        // display:grid;
+        // place-content: center;
+        // place-items: center;
+
+        .error__image{
+            position: relative;
+            // transform: scale(3);
+            width: 20rem;
+            // @media screen and (max-width: 992px){
+            //     transform: scale(2);
+            // }
+            @media screen and (max-width: 602px){
+                width: 18rem;
+            }
+        }
+    }
+    p{
+        text-align: center;
+        margin-top:10px
+    }
+    .retry{
+        color: $base-gold;
+        border-bottom: 1px solid;
+        cursor: pointer;
+    }
+
+    .online {
+        border-left: 2px solid $base-gold;
+    }
+
+    .offline {
+        border-left: 2px solid red;
+    }
+
+    .noNetworkIcon{
+        background-color: red;
+        font-size: 3rem;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+}

@@ -21,7 +21,7 @@ useEffect(()=>{
 
     return (
         <section className="container">
-         <h4 className=" text-white">POPULAR {type}</h4><br />
+         <h4 className=" text-white text-capitalize">Popular {type}</h4><br />
         <div className="popular__movies__container mx-auto mb-4" >   
             {
                 popularMovies.map(

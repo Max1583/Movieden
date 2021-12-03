@@ -20,16 +20,19 @@ overflow-x: scroll;
     width: 5px !important;
   }
 
-.similar__movies{
-    color: #fff !important;
 
-    min-width: 230px !important;
-    height: 350px !important;
+}
+    .similar__movies{
+    color: #fff !important;
+    min-width: 300px;
+    height: 180px;
+    // min-width: 230px !important;
+    // height: 350px !important;
     border-radius: 15px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.507);
+    // background-color: rgba(0, 0, 0, 0.507);
     align-items: flex-end;
     padding: 5px 20px;
 position: relative;
@@ -95,5 +98,3 @@ transition:all .3s ;
     //     border: 2px solid $base-dark;
     // }
 }
-}
-    

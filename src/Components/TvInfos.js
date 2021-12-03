@@ -4,6 +4,7 @@ import { FiDisc,FiDollarSign } from 'react-icons/fi';
 import { FaRegCalendarAlt,FaHourglassEnd,FaFunnelDollar,FaStar } from 'react-icons/fa';
 import {Link,useParams} from 'react-router-dom'
 import noImg from '../Img/noImg.png';
+import DownloadLinks from './DownloadLinks';
 
 
 function TvInfos({tvDetails,ytKey,seasons,genre}) {
@@ -18,7 +19,7 @@ function TvInfos({tvDetails,ytKey,seasons,genre}) {
       </div>
   {/* movie__details__trailer */}
 
-                   <h2 className=" grunge__text">{tvDetails.name}</h2>
+                   <h2 className=" grunge__text mt-3">{tvDetails.name}</h2>
                    <div className=" mt-3 text-white">
 <aside className="d-inline" > <FiDisc /></aside>  <span className="genres" > {genre}</span>
 </div>                   <div className="col-12 mt-3">
@@ -26,9 +27,9 @@ function TvInfos({tvDetails,ytKey,seasons,genre}) {
 <span className="pr-4"><FaRegCalendarAlt />  {tvDetails.first_air_date }</span>  
 {/* <span className="" >  <FaHourglassEnd />  {movieDetails.runtime } mins</span>  */}
 </div>
-  <h4  className="overview_header text-white px-3 py-1 mt-3" >Description</h4>
+  {/* <h4  className="overview_header text-white px-3 py-1 mt-3" >Description</h4> */}
 
-<p className=" movie__overview" > {tvDetails.overview}</p> 
+<p className=" movie__overview mt-3" > {tvDetails.overview}</p> 
 </div>
 <h4  className="overview_header text-white px-3 py-1 mt-5" >Seasons <span className="badge" >{tvDetails.number_of_seasons}</span> </h4>
 
@@ -50,6 +51,9 @@ function TvInfos({tvDetails,ytKey,seasons,genre}) {
                 ))
             }
            </div>
+
+           <DownloadLinks title={tvDetails.name}/>
+
         </div>
     )
 }

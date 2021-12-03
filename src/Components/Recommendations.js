@@ -22,7 +22,7 @@ function Recommendations({linkId,type}) {
 recommendedMovies.length>0?
 <div className="container ">
 
-<h4 className="text-white title__border" >YOU MIGHT ALSO LIKE ❤</h4>
+<h5 className="text-white title__border" > SIMILAR MOVIES</h5>
 <div className=" recommended__movies__container container dark__scrollbar mx-auto mb-5" >
               {
                   recommendedMovies.map(
