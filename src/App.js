@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Home from './Pages/Home'
 import Trending from './Pages/Trending'
 import TvSeries from './Pages/TvSeries'
@@ -11,11 +11,16 @@ import TvDetails from './Components/TvDetails'
 import NotFound from './Pages/NotFound'
 import Search from './Pages/Search'
 import NetworkStatus from './Components/NetworkStatus'
+import AiringToday from './Pages/AiringToday'
+import TopRated from './Pages/TopRated'
+import Latest from './Pages/Latest'
+import Upcoming from './Pages/Upcoming'
+import OnAir from './Pages/OnAir'
 
 function App() {
-    const [networkStatus,setNetworkStatus] =useState(true)
+    const [networkStatus, setNetworkStatus] = useState(true)
     const checkConnection = () => {
-         setNetworkStatus(navigator.onLine)
+        setNetworkStatus(navigator.onLine)
     }
     setInterval(checkConnection, 2000)
     return (
@@ -29,10 +34,15 @@ function App() {
 
                         <Routes>
                             <Route path="/" element={<Home />} />
-                            <Route path="/trending" element={<Trending />} />
+                            <Route path="/on-air/page/:onAirPage" element={<OnAir />} />
+                            <Route path="/upcoming/page/:upcomingPage" element={<Upcoming />} />
+                            <Route path="/latest/page/:latestPage" element={<Latest />} />
+                            <Route path="/top-rated/page/:topRatedPage" element={<TopRated />} />
+                            <Route path="/airing-today/page/:airingPage" element={<AiringToday />} />
+                            <Route path="/trending/page/:trendingPage" element={<Trending />} />
                             <Route path="/popular/:type/page/:popularPageId" element={<Popular />} />
-                            <Route path="/trending-TvSeries" element={<TvSeries />} />
-                            <Route path="/in-Theaters" element={<InTheaters />} />
+                            {/* <Route path="/trending-TvSeries" element={<TvSeries />} /> */}
+                            {/* <Route path="/in-Theaters" element={<InTheaters />} /> */}
                             <Route path={`/MovieDetails/:linkId`} element={<MovieDetails />} />
                             <Route path={`/TvSeries/:tvId`} element={<TvDetails />} />
                             <Route path={`/Search/:searchValue`} element={<Search />} />

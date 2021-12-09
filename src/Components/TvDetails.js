@@ -22,17 +22,15 @@ const [Loading,setLoading] = useState(true)
 
 useEffect(()=>{
     setLoading(true)
-//  window.scrollTo(0, 0);
 axios.get(`${requests.url}/tv/${tvId}?api_key=${requests.apiKey}&append_to_response=videos,images`).then(response=>{
   
     response.data.videos ?
     response.data.videos.results.length > 0 ? setYtKey(response.data.videos.results[Math.floor(Math.random() * response.data.videos.results.length)].key):setYtKey("yes key")
     :setYtKey("yes key")
-    // setYtKey()
-// typeof ytKey == undefined ? "no key" :
+ 
     setTvDetails(response.data)
-// console.log(tvDetails)
-setSeasons(response.data.seasons)
+
+    setSeasons(response.data.seasons)
 setMovieBackdrops(response.data.images.backdrops)
 setGenre( 
     response.data.genres.map(

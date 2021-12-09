@@ -1,0 +1,33 @@
+@import "./var";
+
+.toggle__type {
+  align-items: center;
+  //   background-color: red;
+
+  width: fit-content;
+  margin: 20px auto;
+  height: 35px;
+  border-radius: 30px;
+  position: relative;
+  border: 1px solid $base-gold;
+  font-size: 0.8rem;
+
+  .separator {
+    position: absolute;
+    background-color: $base-gold;
+    width: 1%;
+    height: 100%;
+    border-radius: 30px;
+    transform: rotate(170deg);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      color: $base-gold;
+    }
+  }
+}

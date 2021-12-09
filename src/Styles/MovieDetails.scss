@@ -71,10 +71,7 @@ font-family: $base-font;
         color:$base-gold;
     }
    
-    .genres{
-        color: $base-gold;
-        font-weight: 600 !important;
-    }
+   
     span{
         display: inline-block;
         margin-right: 15px;
@@ -97,3 +94,7 @@ font-family: $base-font;
  
 }
 
+.genres{
+    color: $base-gold;
+    font-weight: 600 !important;
+}

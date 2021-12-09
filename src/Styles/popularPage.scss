@@ -23,16 +23,14 @@
             font-size: 25px;
             font-family: $base-font;  
             text-overflow: ellipsis;
-white-space: nowrap;
-overflow: hidden; 
+            white-space: nowrap;
+            overflow: hidden; 
         }   
     }
     .movie_poster{
         filter: brightness(0.8) contrast(1.2);
         transition:all .6s;
+        height: 300px;
     }
-}
-
-
-}
+}}
     

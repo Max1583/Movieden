@@ -85,9 +85,7 @@ return (
 
 <SimilarMovies linkId={linkId} type="movie" />
 <Recommendations  linkId={linkId} type="movie" />
-<Link to="/">
-  <h5 className=" pl-5 my-5"><i className="fas fa-chevron-left"></i> BACK</h5>
-  </Link>
+
 
 </>
 }

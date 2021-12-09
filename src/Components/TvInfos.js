@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import requests from '../Helpers/requests'
-import { FiDisc,FiDollarSign } from 'react-icons/fi';
-import { FaRegCalendarAlt,FaHourglassEnd,FaFunnelDollar,FaStar } from 'react-icons/fa';
+import { FiDisc } from 'react-icons/fi';
+import { FaRegCalendarAlt } from 'react-icons/fa';
 import {Link,useParams} from 'react-router-dom'
 import noImg from '../Img/noImg.png';
 import DownloadLinks from './DownloadLinks';
@@ -20,14 +20,20 @@ function TvInfos({tvDetails,ytKey,seasons,genre}) {
   {/* movie__details__trailer */}
 
                    <h2 className=" grunge__text mt-3">{tvDetails.name}</h2>
-                   <div className=" mt-3 text-white">
+                   {/* <div className=" mt-3 text-">
 <aside className="d-inline" > <FiDisc /></aside>  <span className="genres" > {genre}</span>
-</div>                   <div className="col-12 mt-3">
+</div>                */}
+
+ 
+<div className=" mt-3 text-white">
+<aside className="d-inline" > <FiDisc /></aside>  <span className="genres" > {genre}</span>
+</div>
+
+    <div className="col-12 mt-3">
 <div className=" mt-3 text-white">
 <span className="pr-4"><FaRegCalendarAlt />  {tvDetails.first_air_date }</span>  
 {/* <span className="" >  <FaHourglassEnd />  {movieDetails.runtime } mins</span>  */}
 </div>
-  {/* <h4  className="overview_header text-white px-3 py-1 mt-3" >Description</h4> */}
 
 <p className=" movie__overview mt-3" > {tvDetails.overview}</p> 
 </div>

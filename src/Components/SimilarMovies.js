@@ -25,7 +25,7 @@ function SimilarMovies({linkId,type}) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "" }}
+        style={{ ...style, display: "none", background: "" }}
         onClick={onClick}
       />
     );
@@ -36,7 +36,7 @@ function SimilarMovies({linkId,type}) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "" }}
+        style={{ ...style, display: "none", background: "" }}
         onClick={onClick}
       />
     );
@@ -45,12 +45,12 @@ function SimilarMovies({linkId,type}) {
 
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    // autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     nextArrow: <SampleNextArrow />,

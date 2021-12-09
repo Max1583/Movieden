@@ -35,38 +35,38 @@ function Home() {
                                 colSize="col-md-6 col-lg-3 "
                                 background={`linear-gradient(40deg, rgba(255, 216, 111, 0.8), rgba(252, 98, 98, 0.7)), url("https://image.tmdb.org/t/p/w500/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg")`}
                                 value="TRENDING"
-                                path="/trending"
+                                path="/trending/page/1"
                             />
 
                             <GridItem
                                 colSize="col-md-6 col-lg-3   "
                                 background={`linear-gradient(40deg, rgba(32, 150, 255, 0.9), rgba(5, 255, 163, 0.9)), url("https://image.tmdb.org/t/p/w500/1Rr5SrvHxMXHu5RjKpaMba8VTzi.jpg")`}
                                 value="UPCOMING"
-                                path="/upcoming"
+                                path="/upcoming/page/1"
                             />
                             <GridItem
                                 colSize="col-md-6 col-lg-6   "
-                                background={`linear-gradient(40deg, rgba(69, 202, 252, 0.9), rgba(48, 63, 159, 0.9)), url("https://image.tmdb.org/t/p/w500/riaO9lEYnzlmkILiLG3Y6HtJaM3.jpg")`}
-                                value="NOW PLAYING"
-                                path="/now-playing"
+                                background={`linear-gradient(40deg, rgba(69, 202, 252, 0.9), rgba(48, 63, 159, 0.9)), url("https://image.tmdb.org/t/p/w500/https://image.tmdb.org/t/p/w500/frliRXiWqZBEUkObLo3eVLa4umQ.jpg")`}
+                                value="ON AIR"
+                                path="/on-air/page/1"
                             />
                             <GridItem
                                 colSize="col-md-6 col-lg-6  "
                                 background={`linear-gradient(40deg, rgba(255, 110, 196, 0.8), rgba(120, 115, 245, 0.8)), url("https://image.tmdb.org/t/p/w500/mxdiaM2tsx8M6W3zLgiPwAkhQfq.jpg")`}
                                 value="LATEST"
-                                path="/latest"
+                                path="/latest/page/1"
                             />
                             <GridItem
                                 colSize="col-md-6 col-lg-3  "
                                 background={`linear-gradient(to right, rgba(147, 42, 30, 0.9), rgba(237, 33, 57, 0.9)), url("https://image.tmdb.org/t/p/w500/fJWe8TyNJHCybsbdinj0b562FDT.jpg")`}
-                                value="5 "
-                                path="/"
+                                value="TOP RATED"
+                                path="/top-rated/page/1"
                             />
                             <GridItem
                                 colSize=" col-md-6 col-lg-3   "
                                 background={`linear-gradient(to right, rgba(229, 93, 136, 0.9), rgba(95, 195, 228, 0.9)), url("https://image.tmdb.org/t/p/w500/s5g9IRR8QWgwuIrxPp9wI59M7V9.jpg")`}
-                                value="6 "
-                                path="/"
+                                value="AIRING TODAY"
+                                path="/airing-today/page/1"
                             />
 
                         </div>

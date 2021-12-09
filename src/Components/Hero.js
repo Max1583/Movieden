@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import requests from '../Helpers/requests'
 import '../Styles/hero.scss';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Hero({ trending }) {
 
@@ -64,7 +64,7 @@ function Hero({ trending }) {
           initialSlide: 1
         }
       },
-      
+
     ]
   };
   return (
@@ -72,23 +72,23 @@ function Hero({ trending }) {
       <Slider {...settings} className=" ">
         {
           trending.map(trend => (
-           
-              <div className="slider__item__container">
-<div  class="slider__item p-3 mt-3 mx-auto" style={{ backgroundImage: `url(${requests.imgURL}${trend.poster_path})` }}>
-  <div class="slider__item__inner">
-<div>
-<Link to={`MovieDetails/${trend.id}`}>
-<h4>{trend.title}</h4>
-</Link>
-<p>{trend.overview}</p>
-<p><b>{trend.release_date}</b></p>
 
-</div>
-  </div>
+            <div className="slider__item__container">
+              <div class="slider__item p-3 mt-3 mx-auto" style={{ backgroundImage: `url(${requests.imgURL}${trend.poster_path})` }}>
+                <div class="slider__item__inner">
+                  <div>
+                    <Link to={`MovieDetails/${trend.id}`}>
+                      <h4>{trend.title}</h4>
+                    </Link>
+                    <p>{trend.overview}</p>
+                    <p><b>{trend.release_date}</b></p>
 
-</div>
+                  </div>
+                </div>
+
               </div>
-            
+            </div>
+
           ))
         }
       </Slider>
