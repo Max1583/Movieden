@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Home from './Pages/Home'
 import Trending from './Pages/Trending'
-import TvSeries from './Pages/TvSeries'
-import InTheaters from './Pages/InTheaters'
 import { Routes, Route } from "react-router-dom";
 import Header from './Components/Header';
 import MovieDetails from './Components/MovieDetails'
@@ -41,8 +39,6 @@ function App() {
                             <Route path="/airing-today/page/:airingPage" element={<AiringToday />} />
                             <Route path="/trending/page/:trendingPage" element={<Trending />} />
                             <Route path="/popular/:type/page/:popularPageId" element={<Popular />} />
-                            {/* <Route path="/trending-TvSeries" element={<TvSeries />} /> */}
-                            {/* <Route path="/in-Theaters" element={<InTheaters />} /> */}
                             <Route path={`/MovieDetails/:linkId`} element={<MovieDetails />} />
                             <Route path={`/TvSeries/:tvId`} element={<TvDetails />} />
                             <Route path={`/Search/:searchValue`} element={<Search />} />

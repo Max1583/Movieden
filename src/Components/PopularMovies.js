@@ -15,13 +15,12 @@ function PopularMovies({ type }) {
             setPopularMovies(response.data.results)
             console.log(popularMovies)
 
-            // response.data.map((popular)=><h2>{popular.id}</h2>)
         })
     }, [])
 
     return (
         <section className="container">
-            <h4 className=" text-white text-capitalize">Popular {type}</h4><br />
+            <h4 className=" text-white text-capitalize">Popular {type == "tv" ? "Tv Series" : "Movies"}</h4><br />
             <div className="popular__movies__container mx-auto mb-4" >
                 {
                     popularMovies.map(
@@ -35,7 +34,6 @@ function PopularMovies({ type }) {
                                         </h5>
                                     </Link>
                                     <p className="release_date " >{type == "tv" ? popularMovie.first_air_date : popularMovie.release_date}</p>
-                                    {/* <div className="vote_average" >{popularMovie.vote_average}</div> */}
                                 </div>
 
                             </section>

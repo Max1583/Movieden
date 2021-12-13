@@ -14,7 +14,6 @@ function AiringToday() {
     const [airing, setAiring] = useState([]);
     const { airingPage } = useParams()
     const [Loading, setLoading] = useState(" ")
-    const [pageLength, setPageLength] = useState(" ")
 
     useEffect(() => {
         setLoading(true)

@@ -28,19 +28,19 @@ function Header() {
 
                 <div className="d-flex align-items-center" >
 
-                    <div className="search__icon fs-5 mx-3">
+                    <div className="search__icon fs-5  mx-3">
                         < FiSearch onClick={() => setIsSearchOverlay(true)} />
 
                     </div>
 
                     <div className={isNav ? "nav__links d-inline mobileNavActive" : "nav__links d-inline "}>
                         <Link onClick={toggleNav} to="/" className="nav-link">Home</Link>
-                        <Link onClick={toggleNav} to="/trending" className="nav-link">Trending (Movies)</Link>
-                        <Link onClick={toggleNav} to="/trending-TvSeries" className="nav-link">Trending (TV Series)</Link>
-                        <Link onClick={toggleNav} to="/in-Theaters" className="nav-link">In Theaters</Link>
+                        <Link onClick={toggleNav} to="/trending/page/1" className="nav-link">Trending </Link>
+                        <Link onClick={toggleNav} to="/latest/page/1" className="nav-link">Latest</Link>
+                        <Link onClick={toggleNav} to="/upcoming/page/1" className="nav-link">Upcoming</Link>
                     </div>
 
-                    <div className="nav__toggle d-block d-lg-none fs-5" onClick={toggleNav}>
+                    <div className="nav__toggle d-block d-lg-none fs-4 ml-4" onClick={toggleNav}>
                         {
                             isNav ? < RiCloseLine className="nav__close" /> : < HiMenuAlt4 />
                         }
