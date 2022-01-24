@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Home from './Pages/Home'
 import Trending from './Pages/Trending'
 import { Routes, Route } from "react-router-dom";
@@ -15,15 +15,28 @@ import Latest from './Pages/Latest'
 import Upcoming from './Pages/Upcoming'
 import OnAir from './Pages/OnAir'
 
+// import Login from './components/Login';
+// import firebase from './Firebase/firebase-config';
 function App() {
     const [networkStatus, setNetworkStatus] = useState(true)
     const checkConnection = () => {
         setNetworkStatus(navigator.onLine)
     }
     setInterval(checkConnection, 2000)
+
+    // const [user, setUser] = useState(null);
+
+    // useEffect(() => {
+    //     firebase.auth().onAuthStateChanged(user => {
+    //         setUser(user);
+    //     })
+    // }, [])
+
+    // console.log(user);
     return (
         <>
             {
+
                 networkStatus ?
 
 

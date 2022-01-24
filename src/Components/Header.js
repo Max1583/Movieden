@@ -6,7 +6,7 @@ import { FiSearch } from 'react-icons/fi';
 import { RiCloseLine } from 'react-icons/ri';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import SearchOverlay from './SearchOverlay'
-
+import Login from './Login'
 
 function Header() {
 
@@ -27,7 +27,7 @@ function Header() {
 
 
                 <div className="d-flex align-items-center" >
-
+                    <Login />
                     <div className="search__icon fs-5  mx-3">
                         < FiSearch onClick={() => setIsSearchOverlay(true)} />
 
